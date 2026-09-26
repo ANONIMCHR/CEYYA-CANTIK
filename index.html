@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Happy Birthday Ceyya 💗</title>
+<link rel="icon" href="data:," />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- lapisan hati yang melayang naik terus -->
+  <div id="heartsLayer" aria-hidden="true"></div>
+
+  <!-- lapisan sparkle saat kado dibuka -->
+  <div id="burstLayer" aria-hidden="true"></div>
+
+  <main id="stageWrap">
+
+    <!-- STAGE 1 — KADO -->
+    <section id="stageGift" class="stage stage-active">
+      <p class="eyebrow-script">untuk</p>
+      <h1 class="name-script" id="nameHeading">Ceyya</h1>
+
+      <button id="giftBox" class="gift-box" aria-label="Buka kado">
+        <span class="lid"><span class="bow"><span class="bow-loop bow-loop-l"></span><span class="bow-loop bow-loop-r"></span><span class="bow-knot"></span></span></span>
+        <span class="box-body">
+          <span class="ribbon-v"></span>
+        </span>
+      </button>
+
+      <p class="tap-hint">ketuk kadonya ✨</p>
+    </section>
+
+    <!-- STAGE 2 — SLIDESHOW -->
+    <section id="stageShow" class="stage">
+      <div class="side-card" id="sideCard">
+        <span class="side-heart">💕</span>
+        <span class="side-text">untuk Ceyya</span>
+      </div>
+
+      <div class="photo-frame" id="photoFrame">
+        <img class="slide slide-a" id="slideA" src="" alt="" />
+        <img class="slide slide-b" id="slideB" src="" alt="" />
+        <div class="frame-shine"></div>
+      </div>
+    </section>
+
+    <!-- STAGE 3 — PESAN -->
+    <section id="stageMessage" class="stage">
+      <div class="message-box" id="messageBox">
+        <p id="typedText"></p>
+        <span class="caret" id="caret"></span>
+      </div>
+
+      <button id="soundFallback" class="sound-fallback" hidden>putar lagu 🎵</button>
+    </section>
+
+  </main>
+
+  <audio id="bgMusic" preload="none" loop></audio>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
